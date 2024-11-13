@@ -1,0 +1,15 @@
+.left-panel {
+    background-image: url('../images/register.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(80%);
+    color: white;
+    padding: 30px;
+}
+.left-panel h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.form-check-label {
+    font-size: 0.9rem;
+}

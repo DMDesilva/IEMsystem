@@ -1,0 +1,62 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Sidebar styling */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    transition: all 0.3s;
+    z-index: 1000;
+    padding-top: 20px;
+  }
+
+  #sidebar.active {
+    left: 0;
+  }
+
+  #sidebar .nav-link {
+    color: white;
+  }
+
+  /* Toggle Button styling inside sidebar */
+  #sidebarToggle {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    top: 15px;
+    right: -40px; /* Positioning toggle button just outside the sidebar */
+  }
+
+  #sidebarToggle i {
+    font-size: 18px;
+  }
+
+  /* Main content styling */
+  #content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+    min-height: 100vh;
+    padding: 20px;
+    transition: all 0.3s;
+  }
+
+  /* Add padding when sidebar is active */
+  #content.with-sidebar {
+    padding-left: 250px;
+  }
